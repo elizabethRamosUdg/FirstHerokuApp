@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Python Getting Started on Heroku</title>
+
+  <style type="text/css">
+    body {
+      background-image: linear-gradient(rgba(255, 255, 255, .5),
+        rgba(255, 255, 255, 0.918)),
+      url("{% static 'background.webp'%}");
+      margin: 0px;
+      min-height: 100vh;
+    }
+
+    footer {
+      text-align: center;
+      background-color: gray;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 110px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    footer p {
+      margin-block: 3px;
+      margin-block-start: 3px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 60vh;
+
+    }
+
+    #logo {
+      height: 60px;
+    }
+
+    header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img id="logo" src="{% static 'logo.webp'%}" alt="youtube">
+    <h1>Mi primera pagina de Heroku</h1>
+  </header>
+
+  <div class="container">
+    <iframe width="700" height="360" src="https://www.youtube.com/embed/BFkaFFZmEJk" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <footer>
+    <p>Autor: Elizabeth Ramos</p>
+    <p>Curso: Conceptualización de servicios en la nube</p>
+    <p>Codigo: 221968854</p>
+    <p><a href="mailto:elizabeth.ramos@udgvirtual.udg.mx">elizabeth.ramos@udgvirtual.udg.mx</a></p>
+  </footer>
+</body>
+
+</html>
